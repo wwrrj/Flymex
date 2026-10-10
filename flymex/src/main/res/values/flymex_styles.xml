@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Flymex widget styles and text appearances. Every value traces back to a Flyme 12.6 style:
+  the Flyme source is quoted above each block.
+-->
+<resources>
+
+    <!-- ===================== Typescale (TextAppearance.Flyme.HeadLine/Body/Label.*) ===================== -->
+    <style name="TextAppearance.Flymex" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="android:textColorHint">?attr/colorSurfaceContainerHighest</item>
+    </style>
+    <style name="TextAppearance.Flymex.Headline" />
+    <style name="TextAppearance.Flymex.Body" />
+    <style name="TextAppearance.Flymex.Label" />
+    <style name="TextAppearance.Flymex.Cell" />
+
+    <style name="TextAppearance.Flymex.Headline.Large">
+        <item name="android:textSize">@dimen/fd_sys_typescale_headline_large_size</item>
+        <item name="android:fontFamily">@string/fd_sys_typescale_headline_large_font</item>
+        <item name="android:letterSpacing">@dimen/fd_sys_typescale_headline_large_tracking</item>
+    </style>
+    <style name="TextAppearance.Flymex.Headline.Medium">
+        <item name="android:textSize">@dimen/fd_sys_typescale_headline_medium_size</item>
+        <item name="android:fontFamily">@string/fd_sys_typescale_headline_medium_font</item>
+        <item name="android:letterSpacing">@dimen/fd_sys_typescale_headline_medium_tracking</item>
+    </style>
+    <style name="TextAppearance.Flymex.Headline.Small">
+        <item name="android:textSize">@dimen/fd_sys_typescale_headline_small_size</item>
+        <item name="android:fontFamily">@string/fd_sys_typescale_headline_small_font</item>
+        <item name="android:letterSpacing">@dimen/fd_sys_typescale_headline_small_tracking</item>
+    </style>
+    <style name="TextAppearance.Flymex.Headline.Mini">
+        <item name="android:textSize">@dimen/fd_sys_typescale_headline_mini_size</item>
+        <item name="android:fontFamily">@string/fd_sys_typescale_headline_mini_font</item>
+        <item name="android:letterSpacing">@dimen/fd_sys_typescale_headline_mini_tracking</item>
+    </style>
+    <style name="TextAppearance.Flymex.Body.Large">
+        <item name="android:textSize">@dimen/fd_sys_typescale_body_large_size</item>
+        <item name="android:fontFamily">@string/fd_sys_typescale_body_large_font</item>
+        <item name="android:letterSpacing">@dimen/fd_sys_typescale_body_large_tracking</item>
+    </style>
+    <style name="TextAppearance.Flymex.Body.Medium">
+        <item name="android:textSize">@dimen/fd_sys_typescale_body_medium_size</item>
+        <item name="android:fontFamily">@string/fd_sys_typescale_body_medium_font</item>
+        <item name="android:letterSpacing">@dimen/fd_sys_typescale_body_medium_tracking</item>
+    </style>
+    <style name="TextAppearance.Flymex.Body.Small">
+        <item name="android:textSize">@dimen/fd_sys_typescale_body_small_size</item>
+        <item name="android:fontFamily">@string/fd_sys_typescale_body_small_font</item>
+        <item name="android:letterSpacing">@dimen/fd_sys_typescale_body_small_tracking</item>
+    </style>
+    <style name="TextAppearance.Flymex.Body.Mini">
+        <item name="android:textSize">@dimen/fd_sys_typescale_body_mini_size</item>
+        <item name="android:fontFamily">@string/fd_sys_typescale_body_mini_font</item>
+        <item name="android:letterSpacing">@dimen/fd_sys_typescale_body_mini_tracking</item>
+        <item name="android:textColor">?attr/colorOnSurfaceVariant</item>
+    </style>
+    <style name="TextAppearance.Flymex.Label.Large">
+        <item name="android:textSize">@dimen/fd_sys_typescale_label_large_size</item>
+        <item name="android:fontFamily">@string/fd_sys_typescale_label_large_font</item>
+        <item name="android:letterSpacing">@dimen/fd_sys_typescale_label_large_tracking</item>
+    </style>
+    <style name="TextAppearance.Flymex.Label.Medium">
+        <item name="android:textSize">@dimen/fd_sys_typescale_label_medium_size</item>
+        <item name="android:fontFamily">@string/fd_sys_typescale_label_medium_font</item>
+        <item name="android:letterSpacing">@dimen/fd_sys_typescale_label_medium_tracking</item>
+    </style>
+    <!-- Flyme ships no label_small size; its 12sp slot is mz_text_size_little -->
+    <style name="TextAppearance.Flymex.Label.Small">
+        <item name="android:textSize">@dimen/mz_text_size_little</item>
+        <item name="android:fontFamily">@string/fd_sys_typescale_label_small_font</item>
+        <item name="android:letterSpacing">@dimen/fd_sys_typescale_label_small_tracking</item>
+    </style>
+    <style name="TextAppearance.Flymex.Label.Mini">
+        <item name="android:textSize">@dimen/fd_sys_typescale_label_mini_size</item>
+        <item name="android:fontFamily">@string/fd_sys_typescale_label_mini_font</item>
+        <item name="android:letterSpacing">@dimen/fd_sys_typescale_label_mini_tracking</item>
+    </style>
+
+    <!-- Legacy Flyme scale (TextAppearance.Flyme.H6…H12 / B6 / B7) -->
+    <style name="TextAppearance.Flymex.H6"><item name="android:textSize">@dimen/mz_text_size_h6</item></style>
+    <style name="TextAppearance.Flymex.H8"><item name="android:textSize">@dimen/mz_text_size_h8</item></style>
+    <style name="TextAppearance.Flymex.H8.Medium"><item name="android:fontFamily">sans-serif-medium</item></style>
+    <style name="TextAppearance.Flymex.H9"><item name="android:textSize">@dimen/mz_text_size_h9</item></style>
+    <style name="TextAppearance.Flymex.H9.Medium"><item name="android:fontFamily">sans-serif-medium</item></style>
+    <style name="TextAppearance.Flymex.H10"><item name="android:textSize">@dimen/mz_text_size_h10</item></style>
+    <style name="TextAppearance.Flymex.H10.Medium"><item name="android:fontFamily">sans-serif-medium</item></style>
+    <style name="TextAppearance.Flymex.H11"><item name="android:textSize">@dimen/mz_text_size_h11</item></style>
+    <style name="TextAppearance.Flymex.H11.Medium"><item name="android:fontFamily">sans-serif-medium</item></style>
+    <style name="TextAppearance.Flymex.H12">
+        <item name="android:textSize">@dimen/mz_text_size_h12</item>
+        <item name="android:textColor">?attr/colorOnSurfaceVariant</item>
+    </style>
+    <style name="TextAppearance.Flymex.B6">
+        <item name="android:textSize">@dimen/mz_text_size_b6</item>
+        <item name="android:textColor">?attr/colorOnSurfaceVariant</item>
+    </style>
+    <style name="TextAppearance.Flymex.B7">
+        <item name="android:textSize">@dimen/mz_text_size_b7</item>
+        <item name="android:textColor">@color/mz_text_tips_desc</item>
+    </style>
+
+    <!-- Dialog text (DialogWindowTitle.Flyme.Light / TextAppearance.Flyme.Light.Content) -->
+    <style name="TextAppearance.Flymex.DialogTitle">
+        <item name="android:textSize">19sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+    <style name="TextAppearance.Flymex.DialogMessage">
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">?attr/colorOnSurfaceVariant</item>
+    </style>
+
+    <!-- List cell text (TextAppearance.Flyme.SingleList.Title / Widget.Flyme.Light.TextView.List.Desc.Normal) -->
+    <style name="TextAppearance.Flymex.Cell.Title">
+        <item name="android:textSize">@dimen/mz_list_item_title_text_size</item>
+        <item name="android:fontFamily">@string/fd_sys_typescale_label_medium_font</item>
+        <item name="android:textColor">@color/mz_title_text_light</item>
+    </style>
+    <style name="TextAppearance.Flymex.Cell.Summary">
+        <item name="android:textSize">@dimen/fd_sys_typescale_body_mini_size</item>
+        <item name="android:fontFamily">@string/fd_sys_typescale_body_mini_font</item>
+        <item name="android:textColor">@color/mz_secondary_text_light</item>
+    </style>
+    <!-- Widget.Flyme.List.Setting.SingleList.Title: category header -->
+    <style name="TextAppearance.Flymex.Cell.Category">
+        <item name="android:textSize">@dimen/fd_sys_typescale_label_medium_size</item>
+        <item name="android:fontFamily">@string/fd_sys_typescale_label_medium_font</item>
+        <item name="android:textColor">?attr/colorOnSurfaceVariant</item>
+    </style>
+    <!-- TextAppearance.Toast -->
+    <style name="TextAppearance.Flymex.Toast">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+    <!-- ===================== Buttons (MzButton / Widget.DeviceDefault.Light.Button.*) ===================== -->
+    <style name="Widget.Flymex.Button" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/mz_btn_corner_default</item>
+        <item name="android:textColor">@color/mz_button_corner_text_color_default</item>
+        <item name="android:textSize">@dimen/mz_corner_button_text_size</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:minHeight">40dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:elevation">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <!-- Widget.DeviceDefault.Light.Button.Color: pill (mz_cir_btn_radius_normal 50dp), 48dp tall in bottom bars -->
+    <style name="Widget.Flymex.Button.Large">
+        <item name="android:background">@drawable/mz_btn_corner_default_state_color</item>
+        <item name="android:minHeight">@dimen/mz_bottom_bar_corner_button_height</item>
+        <item name="android:minWidth">142dp</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+    </style>
+    <!-- Widget.DeviceDefault.Light.Button.LightColor.Color -->
+    <style name="Widget.Flymex.Button.Tonal">
+        <item name="android:background">@drawable/mz_btn_corner_light_bg_state_drawable</item>
+        <item name="android:textColor">@color/mz_button_corner_text_color_light</item>
+    </style>
+    <!-- Widget.DeviceDefault.Light.Button.Stroke -->
+    <style name="Widget.Flymex.Button.Outlined">
+        <item name="android:background">@drawable/mz_btn_corner_normal_stroke</item>
+        <item name="android:textColor">@color/mz_button_corner_text_color_light</item>
+    </style>
+    <!-- MzButton.Delete / mz_btn_corner_bg_gray_smooth_regular -->
+    <style name="Widget.Flymex.Button.Light">
+        <item name="android:background">@drawable/mz_btn_corner_bg_gray_smooth_regular</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+    <style name="Widget.Flymex.Button.Light.Delete">
+        <item name="android:textColor">@color/mz_alert_dialog_delete_button_color</item>
+    </style>
+    <!-- Widget.Flyme.Light.Button.Borderless -->
+    <style name="Widget.Flymex.Button.Text">
+        <item name="android:background">@drawable/mz_item_background_borderless</item>
+        <item name="android:textColor">@color/mz_button_positive_text_default</item>
+        <item name="android:textSize">@dimen/mz_text_size_normal</item>
+        <item name="android:minWidth">60dp</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+    </style>
+    <!-- Widget.Flyme.Light.Button.Borderless.AlertDialog -->
+    <style name="Widget.Flymex.Button.Dialog" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/mz_item_background_borderless</item>
+        <item name="android:textColor">@color/mz_button_positive_text_default</item>
+        <item name="android:textSize">@dimen/mz_text_size_normal</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:minWidth">60dp</item>
+        <item name="android:minHeight">@dimen/mz_alert_dialog_button_bar_height</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+    <style name="Widget.Flymex.Button.Dialog.Delete">
+        <item name="android:textColor">@color/mz_alert_dialog_delete_button_color</item>
+    </style>
+
+    <!-- ===================== Compound buttons ===================== -->
+    <!-- Widget.Flyme.Light.CompoundButton.CheckBox: button mz_btn_check_multiple -->
+    <style name="Widget.Flymex.CheckBox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/mz_btn_check_multiple</item>
+        <item name="android:background">@null</item>
+        <item name="android:textAppearance">@style/TextAppearance.Flymex.Body.Large</item>
+        <item name="android:paddingStart">10dp</item>
+    </style>
+    <!-- Flyme single choice: listChoiceIndicatorSingle = mz_btn_check_single (animated check mark) -->
+    <style name="Widget.Flymex.RadioButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/mz_btn_check_single</item>
+        <item name="android:background">@null</item>
+        <item name="android:textAppearance">@style/TextAppearance.Flymex.Body.Large</item>
+        <item name="android:paddingStart">10dp</item>
+    </style>
+    <!-- Widget.MeizuCommon.Switch -->
+    <style name="Widget.Flymex.Switch" parent="">
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="mcSwitchMinWidth">@dimen/mcSwitchMinWidth</item>
+        <item name="mcTrackOnColor">@color/mz_switch_track_on_color_state</item>
+        <item name="mcTrackOffColor">@color/mz_switch_track_off_color_state</item>
+        <item name="mcThumbOnColor">@color/mz_switch_thumb_on_color</item>
+        <item name="mcThumbOffColor">@color/mz_switch_thumb_off_color</item>
+        <item name="mcTrackDarkOnColor">@color/mz_switch_track_dark_on_color</item>
+        <item name="mcTrackDarkOffColor">@color/mz_switch_track_dark_off_color</item>
+        <item name="mcThumbDarkOnColor">@color/mz_switch_thumb_dark_on_color</item>
+        <item name="mcThumbDarkOffColor">@color/mz_switch_thumb_dark_off_color</item>
+    </style>
+
+    <!-- ===================== Seek bar / progress ===================== -->
+    <!-- com.meizu.common.widget.MzSeekBar (drawn in code by FlymeSeekBar; see its KDoc for the measured spec) -->
+    <style name="Widget.Flymex.SeekBar" parent="Widget.AppCompat.SeekBar">
+        <item name="android:minHeight">@dimen/mz_seekbar_height</item>
+        <item name="android:maxHeight">@dimen/mz_seekbar_height</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:splitTrack">false</item>
+        <item name="mcLargeCircleRadis">13dp</item>
+        <item name="mcDistanceToCircle">2dp</item>
+        <item name="mcTextNumberColor">@android:color/white</item>
+        <item name="mcTextNumberSize">14sp</item>
+    </style>
+    <!-- com.meizu.common.widget.StepSeekBar -->
+    <style name="Widget.Flymex.SeekBar.Step">
+        <item name="mcStepItemsCount">3</item>
+        <item name="mzStepSpotPadding">8dp</item>
+    </style>
+    <!-- Widget.Flyme.Light.ProgressBar: mz_progress_medium 16dp spinner -->
+    <style name="Widget.Flymex.ProgressBar" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:indeterminateDrawable">@drawable/mz_progress_medium</item>
+        <item name="android:minWidth">16dp</item>
+        <item name="android:minHeight">16dp</item>
+        <item name="android:maxWidth">16dp</item>
+        <item name="android:maxHeight">16dp</item>
+    </style>
+    <!-- Widget.MeizuCommon.LoadingView -->
+    <style name="Widget.Flymex.LoadingView" parent="">
+        <item name="mcLoadingRadius">@dimen/mcLoadingRadius</item>
+        <item name="mcRingWidth">@dimen/mcRingWidth</item>
+        <item name="mcLBackground">@color/mc_loading_view_background_light</item>
+        <item name="mcLForeground">?attr/colorPrimary</item>
+        <item name="mcLoadingTextColor">@color/mc_loading_view_text_light</item>
+    </style>
+    <!-- MeizuCommon.CircleProgressBar: 33dp, 1.75dp stroke -->
+    <style name="Widget.Flymex.CircleProgressBar" parent="">
+        <item name="mcBarWidth">@dimen/mz_circle_progressbar_width</item>
+        <item name="mcBarColor">?attr/colorPrimary</item>
+        <item name="mcRimColor">@color/mz_circle_progressbar_rim_color_blue</item>
+        <item name="mcMax">100</item>
+    </style>
+    <!-- Widget.MeizuCommon.CircularProgressButton -->
+    <style name="Widget.Flymex.CircularProgressButton" parent="">
+        <item name="android:textSize">@dimen/mc_cir_progress_button_text_size</item>
+        <item name="android:textColor">@color/mc_cir_progress_button_normal_text_color</item>
+        <item name="android:minWidth">@dimen/mc_cir_progress_button_min_width</item>
+        <item name="android:minHeight">@dimen/mc_cir_progress_button_min_height</item>
+        <item name="mcCirButtonColorIndicator">?attr/colorPrimary</item>
+        <item name="mcCirButtonColorIndicatorBackground">?attr/colorSurfaceContainerHigh</item>
+        <item name="mcCirButtonColorIdle">?attr/colorPrimary</item>
+        <item name="mcCirButtonCornerRadius">@dimen/mc_cir_progress_button_corner_radius</item>
+        <item name="mcCirButtonStrokeWidth">@dimen/mc_cir_progress_button_stroke_width</item>
+    </style>
+
+    <!-- ===================== Containers ===================== -->
+    <!-- SmoothCornerView + Widget.Flyme.Shadow.* -->
+    <style name="Widget.Flymex.CardView" parent="">
+        <item name="mzCornerRadius">?attr/cornerLarge</item>
+        <item name="mzCardBackgroundColor">?attr/colorSurfaceContainerLowest</item>
+        <item name="mzShadowLevel">none</item>
+    </style>
+    <style name="Widget.Flymex.Cell" parent="">
+        <item name="mzIconSize">medium</item>
+        <item name="mzWidget">none</item>
+        <item name="mzShowDivider">false</item>
+    </style>
+    <style name="Widget.Flymex.CellGroup" parent="">
+        <item name="mzGroupCardStyle">true</item>
+    </style>
+    <style name="Widget.Flymex.TabBar" parent="">
+        <item name="mzTabStyle">underline</item>
+        <item name="mzTabBarIndicatorColor">?attr/colorPrimary</item>
+        <item name="mzTabBarIndicatorHeight">@dimen/mz_action_bar_tab_indicator_height</item>
+        <item name="mzTabBarIndicatorWidth">@dimen/mz_action_bar_tab_indicator_width</item>
+        <item name="mzTabTextSelectedColor">?attr/colorPrimary</item>
+        <item name="mzTabTextColor">?attr/colorOnSurface</item>
+        <item name="mzTabTextSize">@dimen/mz_text_size_h8</item>
+    </style>
+    <style name="Widget.Flymex.AppBar" parent="">
+        <item name="mzShowBack">true</item>
+        <item name="mzExpanded">false</item>
+        <item name="mzAppBarBackground">@android:color/transparent</item>
+    </style>
+    <style name="Widget.Flymex.SearchBar" parent="">
+        <item name="mzShowCancel">true</item>
+        <item name="mzImmersive">true</item>
+    </style>
+    <style name="Widget.Flymex.EmptyView" parent="" />
+    <!-- Widget.MeizuCommon.PagerIndicator -->
+    <style name="Widget.Flymex.PageIndicator" parent="">
+        <item name="mcRadius">@dimen/mc_pager_indicator_radius</item>
+        <item name="mcEnlargeRadius">@dimen/mc_pager_indicator_enlarge_radius</item>
+        <item name="mcDistance">@dimen/mc_pager_indicator_distance</item>
+        <item name="mcFillColor">@color/mc_pager_indicator_fill_color</item>
+        <item name="mcHighlightColor">@color/mc_pager_indicator_highlight_color</item>
+    </style>
+    <!-- Widget.MeizuCommon.TipDrawable.Color.Blue + tab dot -->
+    <style name="Widget.Flymex.Badge" parent="">
+        <item name="mcTipColor">@color/mz_tab_view_dot_color</item>
+    </style>
+    <!-- MzEditInputView -->
+    <style name="Widget.Flymex.EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/mz_edit_text_background_gray_frame</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="android:textColorHint">?attr/colorStateDisabled</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+    <!-- Widget.Flyme.Light.PopupWindow / ListPopupWindow: mz_popup_bg_light -->
+    <style name="Widget.Flymex.PopupMenu" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:popupBackground">@drawable/mz_popup_bg_light</item>
+        <item name="android:dropDownVerticalOffset">4dp</item>
+    </style>
+    <style name="Widget.Flymex.ListPopupWindow" parent="Widget.AppCompat.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/mz_popup_bg_light</item>
+        <item name="android:dropDownVerticalOffset">4dp</item>
+    </style>
+
+    <!-- ===================== Window animations (Animation.Flyme.*) ===================== -->
+    <style name="Animation.Flymex.Dialog" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/mz_dialog_alert_anim_enter</item>
+        <item name="android:windowExitAnimation">@anim/mz_dialog_alert_anim_exit</item>
+    </style>
+    <style name="Animation.Flymex.Sheet" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/mz_slide_in_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/mz_slide_out_from_bottom</item>
+    </style>
+    <style name="Animation.Flymex.Popup" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/mz_overflow_popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/mz_overflow_popup_exit</item>
+    </style>
+    <style name="Animation.Flymex.Snackbar" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/mz_snackbar_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/mz_snackbar_exit_anim</item>
+    </style>
+
+</resources>

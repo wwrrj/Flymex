@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="24.0dip" android:width="24.0dip" android:autoMirrored="true" android:viewportWidth="24.0" android:viewportHeight="24.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/mz_btn_checkbox_inner_color_state" android:pathData="M6.251,13.061C5.991,12.801 5.991,12.379 6.251,12.119L6.785,11.585C7.045,11.325 7.467,11.325 7.728,11.585L10.209,14.066L16.275,8C16.535,7.74 16.957,7.74 17.218,8L17.751,8.533C18.011,8.794 18.011,9.216 17.751,9.476L11.223,16.005L11.214,16.014L10.68,16.547C10.42,16.808 9.998,16.808 9.737,16.547L6.251,13.061Z" />
+</vector>

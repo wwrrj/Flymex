@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Flyme semantic theme attributes.
+  Names and meanings are identical to the attributes Flyme's own apps (Settings, SystemUI,
+  flyme.support.v7, com.meizu.common) resolve, so Flyme drawables copied into this library
+  (?colorPrimary, ?colorBrand, ?colorStatePressed, ?cornerMini …) work unchanged.
+
+  colorPrimary / colorError / colorControl* / colorAccent are inherited from AppCompat and not
+  re-declared here.
+-->
+<resources>
+
+    <!-- ===== Flyme Design colour roles (fd_sys_color_*) ===== -->
+    <attr name="colorOnPrimary" format="color" />
+    <attr name="colorPrimaryContainer" format="color" />
+    <attr name="colorOnPrimaryContainer" format="color" />
+    <attr name="colorOnSelected" format="color" />
+
+    <attr name="colorBrand" format="color" />
+    <attr name="colorBrandContainer" format="color" />
+    <attr name="colorOnBrand" format="color" />
+    <attr name="colorOnBrandContainer" format="color" />
+
+    <attr name="colorSurface" format="color" />
+    <attr name="colorSurfaceBright" format="color" />
+    <attr name="colorSurfaceDim" format="color" />
+    <attr name="colorSurfaceContainer" format="color" />
+    <attr name="colorSurfaceContainerLowest" format="color" />
+    <attr name="colorSurfaceContainerLow" format="color" />
+    <attr name="colorSurfaceContainerHigh" format="color" />
+    <attr name="colorSurfaceContainerHighest" format="color" />
+    <attr name="colorSurfaceInverse" format="color" />
+    <attr name="colorOnSurface" format="color" />
+    <attr name="colorOnSurfaceVariant" format="color" />
+    <attr name="colorOnSurfaceInverse" format="color" />
+
+    <attr name="colorOutline" format="color" />
+    <attr name="colorOutlineVariant" format="color" />
+
+    <attr name="colorErrorContainer" format="color" />
+    <attr name="colorOnError" format="color" />
+    <attr name="colorOnErrorContainer" format="color" />
+
+    <attr name="colorStatePressed" format="color" />
+    <attr name="colorStateDisabled" format="color" />
+    <attr name="colorStateDisabledVariant" format="color" />
+    <attr name="colorScrim" format="color" />
+
+    <attr name="colorBlack" format="color" />
+    <attr name="colorWhite" format="color" />
+
+    <!-- Legacy Flyme theme colour ramp (mzThemeColor*) -->
+    <attr name="mzThemeColor" format="color" />
+    <attr name="mzThemeColorLevel1" format="color" />
+    <attr name="mzThemeColorLevel2" format="color" />
+    <attr name="mzThemeColorLevel3" format="color" />
+    <attr name="mzThemeColorLevel4" format="color" />
+    <attr name="mzThemeColorLevel5" format="color" />
+    <attr name="mzThemeColorLevel6" format="color" />
+    <attr name="mzThemeColorLevel7" format="color" />
+    <attr name="mzThemeColorLevel8" format="color" />
+    <attr name="mzThemeColorLevel9" format="color" />
+    <attr name="mzThemeColorLevel10" format="color" />
+    <attr name="mzThemeColorMoreClick" format="color" />
+
+    <!-- ===== Flyme Design corner radii (fd_sys_radius_corner_*) ===== -->
+    <attr name="cornerNone" format="dimension" />
+    <attr name="cornerExtraMini" format="dimension" />
+    <attr name="cornerMini" format="dimension" />
+    <attr name="cornerSmall" format="dimension" />
+    <attr name="cornerRegular" format="dimension" />
+    <attr name="cornerMedium" format="dimension" />
+    <attr name="cornerLarge" format="dimension" />
+    <attr name="cornerHeavy" format="dimension" />
+    <attr name="cornerExtraHeavy" format="dimension" />
+
+    <!-- ===== Default widget styles ===== -->
+    <attr name="flymexButtonStyle" format="reference" />
+    <attr name="flymexSwitchStyle" format="reference" />
+    <attr name="flymexCheckBoxStyle" format="reference" />
+    <attr name="flymexRadioButtonStyle" format="reference" />
+    <attr name="flymexSeekBarStyle" format="reference" />
+    <attr name="flymexLoadingViewStyle" format="reference" />
+    <attr name="flymexCircleProgressBarStyle" format="reference" />
+    <attr name="flymexCircularProgressButtonStyle" format="reference" />
+    <attr name="flymexCellStyle" format="reference" />
+    <attr name="flymexCellGroupStyle" format="reference" />
+    <attr name="flymexCardViewStyle" format="reference" />
+    <attr name="flymexTabBarStyle" format="reference" />
+    <attr name="flymexAppBarStyle" format="reference" />
+    <attr name="flymexSearchBarStyle" format="reference" />
+    <attr name="flymexEmptyViewStyle" format="reference" />
+    <attr name="flymexPageIndicatorStyle" format="reference" />
+    <attr name="flymexBadgeStyle" format="reference" />
+    <attr name="flymexEditTextStyle" format="reference" />
+    <attr name="flymexDialogTheme" format="reference" />
+    <attr name="flymexBottomSheetTheme" format="reference" />
+    <attr name="flymexPopupMenuStyle" format="reference" />
+
+    <!-- ===== FlymeSwitch (com.meizu.common.widget.Switch) ===== -->
+    <declare-styleable name="FlymeSwitch">
+        <attr name="android:checked" />
+        <attr name="android:enabled" />
+        <attr name="mcSwitchMinWidth" format="dimension" />
+        <attr name="mcTrackOnColor" format="color|reference" />
+        <attr name="mcTrackOffColor" format="color|reference" />
+        <attr name="mcThumbOnColor" format="color|reference" />
+        <attr name="mcThumbOffColor" format="color|reference" />
+        <attr name="mcTrackDarkOnColor" format="color|reference" />
+        <attr name="mcTrackDarkOffColor" format="color|reference" />
+        <attr name="mcThumbDarkOnColor" format="color|reference" />
+        <attr name="mcThumbDarkOffColor" format="color|reference" />
+        <!-- Use the dark-surface palette (mz_switch_*_dark_*) regardless of night mode. -->
+        <attr name="mcSwitchOnDark" format="boolean" />
+    </declare-styleable>
+
+    <!-- ===== FlymeSeekBar (MeizuCommon AnimSeekBar) ===== -->
+    <declare-styleable name="FlymeSeekBar">
+        <attr name="mcLargeCircleRadis" format="dimension" />
+        <attr name="mcDistanceToCircle" format="dimension" />
+        <attr name="mcTextNumberColor" format="color" />
+        <attr name="mcTextNumberSize" format="dimension" />
+        <attr name="mcShowNumber" format="boolean" />
+        <attr name="mcStepItemsCount" format="integer" />
+        <attr name="mzStepSpotPadding" format="dimension" />
+    </declare-styleable>
+
+    <!-- ===== FlymeLoadingView (MeizuCommon LoadingView) ===== -->
+    <declare-styleable name="FlymeLoadingView">
+        <attr name="mcLoadingRadius" format="dimension" />
+        <attr name="mcRingWidth" format="dimension" />
+        <attr name="mcLBackground" format="color" />
+        <attr name="mcLForeground" format="color" />
+        <attr name="mcLoadingText" format="string" />
+        <attr name="mcLoadingTextColor" format="color" />
+    </declare-styleable>
+
+    <!-- ===== FlymeCircleProgressBar (MeizuCommon CircleProgressBar) ===== -->
+    <declare-styleable name="FlymeCircleProgressBar">
+        <attr name="mcProgress" format="integer" />
+        <attr name="mcMax" format="integer" />
+        <attr name="mcBarWidth" format="dimension" />
+        <attr name="mcBarColor" format="color" />
+        <attr name="mcRimColor" format="color" />
+        <attr name="mcIndeterminate" format="boolean" />
+    </declare-styleable>
+
+    <!-- ===== FlymeCircularProgressButton ===== -->
+    <declare-styleable name="FlymeCircularProgressButton">
+        <attr name="mcCirButtonColorIndicator" format="color" />
+        <attr name="mcCirButtonColorIndicatorBackground" format="color" />
+        <attr name="mcCirButtonCornerRadius" format="dimension" />
+        <attr name="mcCirButtonStrokeWidth" format="dimension" />
+        <attr name="mcCirButtonTextIdle" format="string" />
+        <attr name="mcCirButtonTextComplete" format="string" />
+        <attr name="mcCirButtonTextError" format="string" />
+        <attr name="mcCirButtonColorIdle" format="color" />
+    </declare-styleable>
+
+    <!-- ===== FlymeCardView (SmoothCornerView + Widget.Flyme.Shadow.*) ===== -->
+    <declare-styleable name="FlymeCardView">
+        <attr name="mzCornerRadius" format="dimension" />
+        <attr name="mzCardBackgroundColor" format="color" />
+        <attr name="mzShadowLevel" format="enum">
+            <enum name="none" value="0" />
+            <enum name="small" value="1" />
+            <enum name="medium" value="2" />
+            <enum name="large" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <!-- ===== FlymeCell (Flyme preference / list item) ===== -->
+    <declare-styleable name="FlymeCell">
+        <attr name="android:title" />
+        <attr name="android:summary" />
+        <attr name="android:icon" />
+        <attr name="mzIconSize" format="enum">
+            <enum name="small" value="0" />
+            <enum name="normal" value="1" />
+            <enum name="medium" value="2" />
+            <enum name="large" value="3" />
+        </attr>
+        <attr name="mzIconRound" format="boolean" />
+        <attr name="mzWidget" format="enum">
+            <enum name="none" value="0" />
+            <enum name="arrow" value="1" />
+            <enum name="toggle" value="2" />
+            <enum name="checkbox" value="3" />
+            <enum name="radio" value="4" />
+            <enum name="text" value="5" />
+            <enum name="loading" value="6" />
+        </attr>
+        <attr name="mzValue" format="string" />
+        <attr name="mzShowDivider" format="boolean" />
+        <attr name="mzDividerInside" format="boolean" />
+        <attr name="mzTitleColor" format="color" />
+        <attr name="mzSummaryColor" format="color" />
+        <attr name="android:checked" />
+        <attr name="android:enabled" />
+    </declare-styleable>
+
+    <declare-styleable name="FlymeCellGroup">
+        <attr name="mzGroupTitle" format="string" />
+        <attr name="mzGroupCardStyle" format="boolean" />
+    </declare-styleable>
+
+    <!-- ===== FlymeTabBar (TabScroller / capsule tabs) ===== -->
+    <declare-styleable name="FlymeTabBar">
+        <attr name="mzTabStyle" format="enum">
+            <enum name="underline" value="0" />
+            <enum name="capsule" value="1" />
+        </attr>
+        <attr name="mzTabBarIndicatorColor" format="color" />
+        <attr name="mzTabBarIndicatorHeight" format="dimension" />
+        <attr name="mzTabBarIndicatorWidth" format="dimension" />
+        <attr name="mzTabTextSelectedColor" format="color" />
+        <attr name="mzTabTextColor" format="color" />
+        <attr name="mzTabTextSize" format="dimension" />
+        <attr name="mzTabEntries" format="reference" />
+    </declare-styleable>
+
+    <!-- ===== FlymeAppBar (Flyme action bar / title bar) ===== -->
+    <declare-styleable name="FlymeAppBar">
+        <attr name="android:title" />
+        <attr name="android:subtitle" />
+        <attr name="mzShowBack" format="boolean" />
+        <attr name="mzExpanded" format="boolean" />
+        <attr name="mzAppBarBackground" format="color" />
+    </declare-styleable>
+
+    <!-- ===== FlymeSearchBar ===== -->
+    <declare-styleable name="FlymeSearchBar">
+        <attr name="android:hint" />
+        <attr name="mzShowCancel" format="boolean" />
+        <attr name="mzImmersive" format="boolean" />
+    </declare-styleable>
+
+    <!-- ===== FlymeEmptyView (MeizuCommon EmptyView) ===== -->
+    <declare-styleable name="FlymeEmptyView">
+        <attr name="mcEmptyImage" format="reference" />
+        <attr name="mcEmptyTitle" format="string" />
+        <attr name="mcEmptySummary" format="string" />
+        <attr name="mcEmptyActionText" format="string" />
+    </declare-styleable>
+
+    <!-- ===== FlymePageIndicator (MeizuCommon PagerIndicator) ===== -->
+    <declare-styleable name="FlymePageIndicator">
+        <attr name="mcRadius" format="dimension" />
+        <attr name="mcEnlargeRadius" format="dimension" />
+        <attr name="mcDistance" format="dimension" />
+        <attr name="mcFillColor" format="color" />
+        <attr name="mcHighlightColor" format="color" />
+        <attr name="mcCount" format="integer" />
+        <attr name="mcCurrent" format="integer" />
+    </declare-styleable>
+
+    <!-- ===== FlymeBadge / tip dot ===== -->
+    <declare-styleable name="FlymeBadge">
+        <attr name="mcTipColor" format="color" />
+        <attr name="mcBadgeCount" format="integer" />
+        <attr name="mcBadgeDot" format="boolean" />
+    </declare-styleable>
+
+</resources>

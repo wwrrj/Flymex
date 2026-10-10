@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Search glyph in Flyme's thin line style (1.6dp stroke equivalent). -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M10.5,3a7.5,7.5 0,1 1,0 15a7.5,7.5 0,0 1,0 -15zM10.5,4.6a5.9,5.9 0,1 0,0 11.8a5.9,5.9 0,0 0,0 -11.8zM15.9,14.8l5.2,5.2l-1.1,1.1l-5.2,-5.2z" />
+</vector>

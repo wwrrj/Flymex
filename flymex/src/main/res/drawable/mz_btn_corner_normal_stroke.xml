@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/fd_sys_radius_corner_smooth_large" />
+            <stroke android:width="@dimen/mz_btn_stroke_width" android:color="?colorSurfaceContainerLow" android:dashWidth="2.0dip" android:dashGap="0.0dip" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/fd_sys_radius_corner_smooth_large" />
+                    <stroke android:width="@dimen/mz_btn_stroke_width" android:color="?colorPrimary" android:dashWidth="2.0dip" android:dashGap="0.0dip" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/fd_sys_radius_corner_smooth_large" />
+                    <stroke android:width="@dimen/mz_btn_stroke_width" android:color="?colorStatePressed" android:dashWidth="2.0dip" android:dashGap="0.0dip" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/fd_sys_radius_corner_smooth_large" />
+            <stroke android:width="@dimen/mz_btn_stroke_width" android:color="?colorPrimary" android:dashWidth="2.0dip" android:dashGap="0.0dip" />
+        </shape>
+    </item>
+</selector>

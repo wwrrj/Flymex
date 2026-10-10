@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Flymex themes. Attribute → resource mapping is copied from Flyme 12.6's
+  Base.Theme.Flyme.AppCompat.Light (+ its colour variants). Night values come from
+  values-night/flymex_colors.xml automatically.
+-->
+<resources>
+
+    <style name="Base.Theme.Flymex" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Theme colour (default Blue) -->
+        <item name="colorPrimary">@color/fd_sys_color_primary_blue</item>
+        <item name="colorOnPrimary">@color/fd_sys_color_on_primary_blue</item>
+        <item name="colorPrimaryContainer">@color/fd_sys_color_primary_container_blue</item>
+        <item name="colorOnPrimaryContainer">@color/fd_sys_color_on_primary_container_blue</item>
+        <item name="colorOnSelected">@color/fd_sys_color_on_primary_selected_blue</item>
+        <item name="mzThemeColor">@color/mz_theme_color_blue</item>
+        <item name="mzThemeColorLevel1">@color/Blue_1</item>
+        <item name="mzThemeColorLevel2">@color/Blue_2</item>
+        <item name="mzThemeColorLevel3">@color/Blue_3</item>
+        <item name="mzThemeColorLevel4">@color/Blue_4</item>
+        <item name="mzThemeColorLevel5">@color/Blue_5</item>
+        <item name="mzThemeColorLevel6">@color/Blue_6</item>
+        <item name="mzThemeColorLevel7">@color/Blue_7</item>
+        <item name="mzThemeColorLevel8">@color/Blue_8</item>
+        <item name="mzThemeColorLevel9">@color/Blue_9</item>
+        <item name="mzThemeColorLevel10">@color/Blue_10</item>
+        <item name="mzThemeColorMoreClick">@color/mz_theme_color_blue_more</item>
+
+        <!-- Brand (always Flyme blue, except on Polestar themes) -->
+        <item name="colorBrand">@color/fd_sys_color_brand</item>
+        <item name="colorBrandContainer">@color/fd_sys_color_brand_container</item>
+        <item name="colorOnBrand">@color/fd_sys_color_on_brand</item>
+        <item name="colorOnBrandContainer">@color/fd_sys_color_on_brand_container</item>
+
+        <!-- Surfaces -->
+        <item name="colorSurface">@color/fd_sys_color_surface_default</item>
+        <item name="colorSurfaceBright">@color/fd_sys_color_surface_bright_default</item>
+        <item name="colorSurfaceDim">@color/fd_sys_color_surface_dim_default</item>
+        <item name="colorSurfaceContainer">@color/fd_sys_color_surface_container_default</item>
+        <item name="colorSurfaceContainerLowest">@color/fd_sys_color_surface_container_lowest_default</item>
+        <item name="colorSurfaceContainerLow">@color/fd_sys_color_surface_container_low_default</item>
+        <item name="colorSurfaceContainerHigh">@color/fd_sys_color_surface_container_high_default</item>
+        <item name="colorSurfaceContainerHighest">@color/fd_sys_color_surface_container_highest_default</item>
+        <item name="colorSurfaceInverse">@color/fd_sys_color_inverse_surface_default</item>
+        <item name="colorOnSurface">@color/fd_sys_color_on_surface_default</item>
+        <item name="colorOnSurfaceVariant">@color/fd_sys_color_on_surface_variant_default</item>
+        <item name="colorOnSurfaceInverse">@color/fd_sys_color_inverse_on_surface_default</item>
+        <item name="colorOutline">@color/fd_sys_color_outline_default</item>
+        <item name="colorOutlineVariant">@color/fd_sys_color_outline_variant_default</item>
+
+        <!-- Error -->
+        <item name="colorError">@color/fd_sys_color_error_default</item>
+        <item name="colorErrorContainer">@color/fd_sys_color_error_container_default</item>
+        <item name="colorOnError">@color/fd_sys_color_on_error_default</item>
+        <item name="colorOnErrorContainer">@color/fd_sys_color_on_error_container_default</item>
+
+        <!-- States -->
+        <item name="colorStatePressed">@color/fd_sys_color_state_pressed_default</item>
+        <item name="colorStateDisabled">@color/fd_sys_color_state_disabled_default</item>
+        <item name="colorStateDisabledVariant">@color/fd_sys_color_state_disabled_variant_default</item>
+        <item name="colorScrim">@color/fd_sys_color_scrim_default</item>
+        <item name="colorBlack">@color/fd_sys_color_black_default</item>
+        <item name="colorWhite">@color/fd_sys_color_white_default</item>
+
+        <!-- Corners -->
+        <item name="cornerNone">@dimen/fd_sys_radius_corner_none</item>
+        <item name="cornerExtraMini">@dimen/fd_sys_radius_corner_smooth_extra_mini</item>
+        <item name="cornerMini">@dimen/fd_sys_radius_corner_smooth_mini</item>
+        <item name="cornerSmall">@dimen/fd_sys_radius_corner_smooth_small</item>
+        <item name="cornerRegular">@dimen/fd_sys_radius_corner_smooth_regular</item>
+        <item name="cornerMedium">@dimen/fd_sys_radius_corner_smooth_medium</item>
+        <item name="cornerLarge">@dimen/fd_sys_radius_corner_smooth_large</item>
+        <item name="cornerHeavy">@dimen/fd_sys_radius_corner_smooth_heavy</item>
+        <item name="cornerExtraHeavy">@dimen/fd_sys_radius_corner_smooth_extra_heavy</item>
+
+        <!-- AppCompat / framework plumbing -->
+        <item name="colorAccent">@color/fd_sys_color_primary_blue</item>
+        <item name="colorControlActivated">?attr/colorPrimary</item>
+        <item name="colorControlHighlight">@color/fd_sys_color_state_pressed_default</item>
+        <item name="colorControlNormal">@color/fd_sys_color_on_surface_variant_default</item>
+        <item name="colorButtonNormal">@color/fd_sys_color_surface_container_low_default</item>
+        <item name="android:colorBackground">@color/fd_sys_color_surface_default</item>
+        <item name="android:windowBackground">@color/fd_sys_color_surface_default</item>
+        <item name="android:textColorPrimary">@color/fd_sys_color_on_surface_default</item>
+        <item name="android:textColorSecondary">@color/fd_sys_color_on_surface_variant_default</item>
+        <item name="android:textColorTertiary">@color/fd_sys_color_on_surface_variant_default</item>
+        <item name="android:textColorHint">@color/fd_sys_color_surface_container_highest_default</item>
+        <item name="android:textColorHighlight">@color/fd_sys_color_primary_container_blue</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">@bool/flymex_light_system_bars</item>
+        <item name="android:windowLightNavigationBar">@bool/flymex_light_system_bars</item>
+        <item name="android:enforceNavigationBarContrast">false</item>
+        <item name="android:textAppearance">@style/TextAppearance.Flymex.Body.Medium</item>
+        <item name="android:listDivider">@drawable/mz_new_list_line</item>
+        <item name="listPreferredItemHeightSmall">@dimen/mz_list_item_height_small</item>
+        <item name="android:listPreferredItemHeightSmall">@dimen/mz_list_item_height_small</item>
+        <item name="dialogPreferredPadding">@dimen/mz_alert_dialog_normal_margin_start</item>
+        <item name="android:dialogPreferredPadding">@dimen/mz_alert_dialog_normal_margin_start</item>
+
+        <!-- Widget defaults -->
+        <item name="flymexButtonStyle">@style/Widget.Flymex.Button</item>
+        <item name="buttonStyle">@style/Widget.Flymex.Button</item>
+        <item name="android:buttonStyle">@style/Widget.Flymex.Button</item>
+        <item name="borderlessButtonStyle">@style/Widget.Flymex.Button.Text</item>
+        <item name="flymexSwitchStyle">@style/Widget.Flymex.Switch</item>
+        <item name="flymexCheckBoxStyle">@style/Widget.Flymex.CheckBox</item>
+        <item name="checkboxStyle">@style/Widget.Flymex.CheckBox</item>
+        <item name="android:checkboxStyle">@style/Widget.Flymex.CheckBox</item>
+        <item name="flymexRadioButtonStyle">@style/Widget.Flymex.RadioButton</item>
+        <item name="radioButtonStyle">@style/Widget.Flymex.RadioButton</item>
+        <item name="android:radioButtonStyle">@style/Widget.Flymex.RadioButton</item>
+        <item name="flymexSeekBarStyle">@style/Widget.Flymex.SeekBar</item>
+        <item name="seekBarStyle">@style/Widget.Flymex.SeekBar</item>
+        <item name="android:seekBarStyle">@style/Widget.Flymex.SeekBar</item>
+        <item name="android:progressBarStyle">@style/Widget.Flymex.ProgressBar</item>
+        <item name="android:progressBarStyleSmall">@style/Widget.Flymex.ProgressBar</item>
+        <item name="flymexLoadingViewStyle">@style/Widget.Flymex.LoadingView</item>
+        <item name="flymexCircleProgressBarStyle">@style/Widget.Flymex.CircleProgressBar</item>
+        <item name="flymexCircularProgressButtonStyle">@style/Widget.Flymex.CircularProgressButton</item>
+        <item name="flymexCellStyle">@style/Widget.Flymex.Cell</item>
+        <item name="flymexCellGroupStyle">@style/Widget.Flymex.CellGroup</item>
+        <item name="flymexCardViewStyle">@style/Widget.Flymex.CardView</item>
+        <item name="flymexTabBarStyle">@style/Widget.Flymex.TabBar</item>
+        <item name="flymexAppBarStyle">@style/Widget.Flymex.AppBar</item>
+        <item name="flymexSearchBarStyle">@style/Widget.Flymex.SearchBar</item>
+        <item name="flymexEmptyViewStyle">@style/Widget.Flymex.EmptyView</item>
+        <item name="flymexPageIndicatorStyle">@style/Widget.Flymex.PageIndicator</item>
+        <item name="flymexBadgeStyle">@style/Widget.Flymex.Badge</item>
+        <item name="flymexEditTextStyle">@style/Widget.Flymex.EditText</item>
+        <item name="editTextStyle">@style/Widget.Flymex.EditText</item>
+        <item name="android:editTextStyle">@style/Widget.Flymex.EditText</item>
+        <item name="flymexDialogTheme">@style/ThemeOverlay.Flymex.Dialog</item>
+        <item name="alertDialogTheme">@style/ThemeOverlay.Flymex.Dialog</item>
+        <item name="android:alertDialogTheme">@style/ThemeOverlay.Flymex.Dialog</item>
+        <item name="flymexBottomSheetTheme">@style/ThemeOverlay.Flymex.BottomSheet</item>
+        <item name="flymexPopupMenuStyle">@style/Widget.Flymex.PopupMenu</item>
+        <item name="popupMenuStyle">@style/Widget.Flymex.PopupMenu</item>
+        <item name="android:popupMenuStyle">@style/Widget.Flymex.PopupMenu</item>
+    </style>
+
+    <!-- The theme to use in your app. Follows the system night mode. -->
+    <style name="Theme.Flymex" parent="Base.Theme.Flymex" />
+
+    <!-- ===== Theme colour variants (Flyme "主题色") ===== -->
+    <style name="Theme.Flymex.Blue" />
+
+    <style name="Theme.Flymex.Green">
+        <item name="colorPrimary">@color/fd_sys_color_primary_green</item>
+        <item name="colorOnPrimary">@color/fd_sys_color_on_primary_green</item>
+        <item name="colorPrimaryContainer">@color/fd_sys_color_primary_container_green</item>
+        <item name="colorOnPrimaryContainer">@color/fd_sys_color_on_primary_container_green</item>
+        <item name="colorAccent">@color/fd_sys_color_primary_green</item>
+        <item name="colorBrand">@color/fd_sys_color_primary_green</item>
+        <item name="colorBrandContainer">@color/fd_sys_color_primary_container_green</item>
+        <item name="colorOnBrand">@color/fd_sys_color_on_primary_green</item>
+        <item name="colorOnBrandContainer">@color/fd_sys_color_on_primary_container_green</item>
+    </style>
+
+    <style name="Theme.Flymex.Orange">
+        <item name="colorPrimary">@color/fd_sys_color_primary_orange</item>
+        <item name="colorOnPrimary">@color/fd_sys_color_on_primary_orange</item>
+        <item name="colorPrimaryContainer">@color/fd_sys_color_primary_container_orange</item>
+        <item name="colorOnPrimaryContainer">@color/fd_sys_color_on_primary_container_orange</item>
+        <item name="colorAccent">@color/fd_sys_color_primary_orange</item>
+        <item name="colorBrand">@color/fd_sys_color_primary_orange</item>
+        <item name="colorBrandContainer">@color/fd_sys_color_primary_container_orange</item>
+        <item name="colorOnBrand">@color/fd_sys_color_on_primary_orange</item>
+        <item name="colorOnBrandContainer">@color/fd_sys_color_on_primary_container_orange</item>
+    </style>
+
+    <style name="Theme.Flymex.Purple">
+        <item name="colorPrimary">@color/fd_sys_color_primary_purple</item>
+        <item name="colorOnPrimary">@color/fd_sys_color_on_primary_purple</item>
+        <item name="colorPrimaryContainer">@color/fd_sys_color_primary_container_purple</item>
+        <item name="colorOnPrimaryContainer">@color/fd_sys_color_on_primary_container_purple</item>
+        <item name="colorAccent">@color/fd_sys_color_primary_purple</item>
+        <item name="colorBrand">@color/fd_sys_color_primary_purple</item>
+        <item name="colorBrandContainer">@color/fd_sys_color_primary_container_purple</item>
+        <item name="colorOnBrand">@color/fd_sys_color_on_primary_purple</item>
+        <item name="colorOnBrandContainer">@color/fd_sys_color_on_primary_container_purple</item>
+    </style>
+
+    <style name="Theme.Flymex.Red">
+        <item name="colorPrimary">@color/fd_sys_color_primary_red</item>
+        <item name="colorOnPrimary">@color/fd_sys_color_on_primary_red</item>
+        <item name="colorPrimaryContainer">@color/fd_sys_color_primary_container_red</item>
+        <item name="colorOnPrimaryContainer">@color/fd_sys_color_on_primary_container_red</item>
+        <item name="colorAccent">@color/fd_sys_color_primary_red</item>
+        <item name="colorBrand">@color/fd_sys_color_primary_red</item>
+        <item name="colorBrandContainer">@color/fd_sys_color_primary_container_red</item>
+        <item name="colorOnBrand">@color/fd_sys_color_on_primary_red</item>
+        <item name="colorOnBrandContainer">@color/fd_sys_color_on_primary_container_red</item>
+    </style>
+
+    <style name="Theme.Flymex.Yellow">
+        <item name="colorPrimary">@color/fd_sys_color_primary_yellow</item>
+        <item name="colorOnPrimary">@color/fd_sys_color_on_primary_yellow</item>
+        <item name="colorPrimaryContainer">@color/fd_sys_color_primary_container_yellow</item>
+        <item name="colorOnPrimaryContainer">@color/fd_sys_color_on_primary_container_yellow</item>
+        <item name="colorAccent">@color/fd_sys_color_primary_yellow</item>
+        <item name="colorBrand">@color/fd_sys_color_primary_yellow</item>
+        <item name="colorBrandContainer">@color/fd_sys_color_primary_container_yellow</item>
+        <item name="colorOnBrand">@color/fd_sys_color_on_primary_yellow</item>
+        <item name="colorOnBrandContainer">@color/fd_sys_color_on_primary_container_yellow</item>
+    </style>
+
+    <style name="Theme.Flymex.Cyan">
+        <item name="colorPrimary">@color/fd_sys_color_primary_cyan</item>
+        <item name="colorOnPrimary">@color/fd_sys_color_on_primary_cyan</item>
+        <item name="colorPrimaryContainer">@color/fd_sys_color_primary_container_cyan</item>
+        <item name="colorOnPrimaryContainer">@color/fd_sys_color_on_primary_container_cyan</item>
+        <item name="colorAccent">@color/fd_sys_color_primary_cyan</item>
+        <item name="colorBrand">@color/fd_sys_color_primary_cyan</item>
+        <item name="colorBrandContainer">@color/fd_sys_color_primary_container_cyan</item>
+        <item name="colorOnBrand">@color/fd_sys_color_on_primary_cyan</item>
+        <item name="colorOnBrandContainer">@color/fd_sys_color_on_primary_container_cyan</item>
+    </style>
+
+    <!-- Polestar (极星) themes also swap the brand colour, as Flyme does. -->
+    <style name="Theme.Flymex.Polestar">
+        <item name="colorPrimary">@color/fd_sys_color_primary_polestar</item>
+        <item name="colorOnPrimary">@color/fd_sys_color_on_primary_polestar</item>
+        <item name="colorPrimaryContainer">@color/fd_sys_color_primary_container_polestar</item>
+        <item name="colorOnPrimaryContainer">@color/fd_sys_color_on_primary_container_polestar</item>
+        <item name="colorOnSelected">@color/fd_sys_color_primary_selected_polestar</item>
+        <item name="colorBrand">@color/fd_sys_color_brand_polestar</item>
+        <item name="colorBrandContainer">@color/fd_sys_color_brand_container_polestar</item>
+        <item name="colorOnBrand">@color/fd_sys_color_on_brand_polestar</item>
+        <item name="colorOnBrandContainer">@color/fd_sys_color_on_brand_container_polestar</item>
+        <item name="colorAccent">@color/fd_sys_color_primary_polestar</item>
+    </style>
+
+    <!-- ===== Theme overlays (apply to a single view tree with android:theme) ===== -->
+    <style name="ThemeOverlay.Flymex.Green" parent="">
+        <item name="colorPrimary">@color/fd_sys_color_primary_green</item>
+        <item name="colorBrand">@color/fd_sys_color_primary_green</item>
+        <item name="colorOnBrand">@color/fd_sys_color_on_primary_green</item>
+        <item name="colorOnPrimary">@color/fd_sys_color_on_primary_green</item>
+        <item name="colorPrimaryContainer">@color/fd_sys_color_primary_container_green</item>
+        <item name="colorOnPrimaryContainer">@color/fd_sys_color_on_primary_container_green</item>
+    </style>
+    <style name="ThemeOverlay.Flymex.Orange" parent="">
+        <item name="colorPrimary">@color/fd_sys_color_primary_orange</item>
+        <item name="colorBrand">@color/fd_sys_color_primary_orange</item>
+        <item name="colorOnBrand">@color/fd_sys_color_on_primary_orange</item>
+        <item name="colorOnPrimary">@color/fd_sys_color_on_primary_orange</item>
+        <item name="colorPrimaryContainer">@color/fd_sys_color_primary_container_orange</item>
+        <item name="colorOnPrimaryContainer">@color/fd_sys_color_on_primary_container_orange</item>
+    </style>
+    <style name="ThemeOverlay.Flymex.Purple" parent="">
+        <item name="colorPrimary">@color/fd_sys_color_primary_purple</item>
+        <item name="colorBrand">@color/fd_sys_color_primary_purple</item>
+        <item name="colorOnBrand">@color/fd_sys_color_on_primary_purple</item>
+        <item name="colorOnPrimary">@color/fd_sys_color_on_primary_purple</item>
+        <item name="colorPrimaryContainer">@color/fd_sys_color_primary_container_purple</item>
+        <item name="colorOnPrimaryContainer">@color/fd_sys_color_on_primary_container_purple</item>
+    </style>
+    <style name="ThemeOverlay.Flymex.Red" parent="">
+        <item name="colorPrimary">@color/fd_sys_color_primary_red</item>
+        <item name="colorBrand">@color/fd_sys_color_primary_red</item>
+        <item name="colorOnBrand">@color/fd_sys_color_on_primary_red</item>
+        <item name="colorOnPrimary">@color/fd_sys_color_on_primary_red</item>
+        <item name="colorPrimaryContainer">@color/fd_sys_color_primary_container_red</item>
+        <item name="colorOnPrimaryContainer">@color/fd_sys_color_on_primary_container_red</item>
+    </style>
+    <style name="ThemeOverlay.Flymex.Yellow" parent="">
+        <item name="colorPrimary">@color/fd_sys_color_primary_yellow</item>
+        <item name="colorBrand">@color/fd_sys_color_primary_yellow</item>
+        <item name="colorOnBrand">@color/fd_sys_color_on_primary_yellow</item>
+        <item name="colorOnPrimary">@color/fd_sys_color_on_primary_yellow</item>
+        <item name="colorPrimaryContainer">@color/fd_sys_color_primary_container_yellow</item>
+        <item name="colorOnPrimaryContainer">@color/fd_sys_color_on_primary_container_yellow</item>
+    </style>
+    <style name="ThemeOverlay.Flymex.Cyan" parent="">
+        <item name="colorPrimary">@color/fd_sys_color_primary_cyan</item>
+        <item name="colorBrand">@color/fd_sys_color_primary_cyan</item>
+        <item name="colorOnBrand">@color/fd_sys_color_on_primary_cyan</item>
+        <item name="colorOnPrimary">@color/fd_sys_color_on_primary_cyan</item>
+        <item name="colorPrimaryContainer">@color/fd_sys_color_primary_container_cyan</item>
+        <item name="colorOnPrimaryContainer">@color/fd_sys_color_on_primary_container_cyan</item>
+    </style>
+    <style name="ThemeOverlay.Flymex.Polestar" parent="">
+        <item name="colorPrimary">@color/fd_sys_color_primary_polestar</item>
+        <item name="colorOnPrimary">@color/fd_sys_color_on_primary_polestar</item>
+        <item name="colorPrimaryContainer">@color/fd_sys_color_primary_container_polestar</item>
+        <item name="colorOnPrimaryContainer">@color/fd_sys_color_on_primary_container_polestar</item>
+        <item name="colorBrand">@color/fd_sys_color_brand_polestar</item>
+        <item name="colorOnBrand">@color/fd_sys_color_on_brand_polestar</item>
+    </style>
+
+    <!-- ===== Dialog / sheet themes ===== -->
+    <!-- Theme.Flyme.Light.Dialog.Alert: window bg mz_dialog_background_drawable (16dp, surfaceContainerLowest),
+         Animation.Flyme.Dialog.Alert, dim = fd_sys_color_scrim -->
+    <style name="ThemeOverlay.Flymex.Dialog" parent="ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/mz_dialog_background_drawable</item>
+        <item name="android:windowAnimationStyle">@style/Animation.Flymex.Dialog</item>
+        <item name="android:windowMinWidthMajor">@dimen/mz_alert_dialog_width</item>
+        <item name="android:windowMinWidthMinor">@dimen/mz_alert_dialog_width</item>
+        <item name="android:backgroundDimAmount">0.1</item>
+        <item name="android:windowTitleStyle">@style/TextAppearance.Flymex.DialogTitle</item>
+        <item name="android:textColorPrimary">?attr/colorOnSurface</item>
+        <item name="buttonBarButtonStyle">@style/Widget.Flymex.Button.Dialog</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Widget.Flymex.Button.Dialog</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Widget.Flymex.Button.Dialog</item>
+        <item name="buttonBarNeutralButtonStyle">@style/Widget.Flymex.Button.Dialog</item>
+        <item name="textColorAlertDialogListItem">?attr/colorOnSurface</item>
+        <item name="android:listChoiceIndicatorSingle">@drawable/mz_btn_check_single</item>
+        <item name="android:listChoiceIndicatorMultiple">@drawable/mz_btn_check_multiple</item>
+    </style>
+
+    <!-- Flyme.AlertDialog.AppCompat.Light.ShowAtBottom: slides in from the bottom (Animation.Flyme.Dialog.ShowAtBottom) -->
+    <style name="ThemeOverlay.Flymex.BottomSheet" parent="ThemeOverlay.Flymex.Dialog">
+        <item name="android:windowAnimationStyle">@style/Animation.Flymex.Sheet</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+    </style>
+
+</resources>

@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.flymex.widget.FlymeAppBar
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:title="Flymex"
+        app:mzExpanded="true"
+        app:mzShowBack="false" />
+
+    <com.flymex.widget.FlymeTabBar
+        android:id="@+id/tabBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/fd_sys_margin_medium"
+        android:layout_marginEnd="@dimen/fd_sys_margin_medium"
+        app:mzTabEntries="@array/sample_tabs"
+        app:mzTabStyle="underline" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:paddingBottom="24dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.flymex.widget.FlymeSearchBar
+                android:id="@+id/searchBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="搜索设置项" />
+
+            <!-- ===== 外观 ===== -->
+            <com.flymex.widget.FlymeCellGroup
+                android:id="@+id/groupTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mzGroupTitle="外观">
+
+                <com.flymex.widget.FlymeCell
+                    android:id="@+id/cellNight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:summary="跟随系统或手动切换"
+                    android:title="深色模式"
+                    app:mzWidget="toggle" />
+
+                <com.flymex.widget.FlymeCell
+                    android:id="@+id/cellAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:title="主题色"
+                    app:mzValue="蓝色"
+                    app:mzWidget="text" />
+            </com.flymex.widget.FlymeCellGroup>
+
+            <!-- ===== 基础控件 ===== -->
+            <com.flymex.widget.FlymeCellGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mzGroupTitle="基础控件">
+
+                <com.flymex.widget.FlymeCell
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:summary="com.meizu.common.widget.Switch 几何与配色"
+                    android:title="开关"
+                    app:mzWidget="toggle"
+                    android:checked="true" />
+
+                <com.flymex.widget.FlymeCell
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:title="禁用开关"
+                    android:enabled="false"
+                    app:mzWidget="toggle"
+                    android:checked="true" />
+
+                <com.flymex.widget.FlymeCell
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:title="多选"
+                    app:mzWidget="checkbox"
+                    android:checked="true" />
+
+                <com.flymex.widget.FlymeCell
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:title="单选（Flyme 勾选样式）"
+                    app:mzWidget="radio"
+                    android:checked="true" />
+
+                <com.flymex.widget.FlymeCell
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:summary="带右箭头的跳转项"
+                    android:title="更多设置"
+                    app:mzWidget="arrow" />
+
+                <com.flymex.widget.FlymeCell
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:title="加载中"
+                    app:mzWidget="loading" />
+            </com.flymex.widget.FlymeCellGroup>
+
+            <!-- ===== 滑杆与进度 ===== -->
+            <com.flymex.widget.FlymeCellGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mzGroupTitle="滑杆与进度">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/fd_sys_margin_medium">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="媒体"
+                        android:textColor="?attr/colorOnSurfaceVariant"
+                        android:textSize="13sp" />
+
+                    <com.flymex.widget.FlymeSeekBar
+                        android:id="@+id/seekBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:progress="40"
+                        app:mcShowNumber="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="字体大小（分段）"
+                        android:textColor="?attr/colorOnSurfaceVariant"
+                        android:textSize="13sp" />
+
+                    <com.flymex.widget.FlymeSeekBar
+                        style="@style/Widget.Flymex.SeekBar.Step"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:progress="1"
+                        app:mcStepItemsCount="4" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center_vertical">
+
+                        <com.flymex.widget.FlymeLoadingView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:mcLoadingText="加载中…" />
+
+                        <com.flymex.widget.FlymeCircleProgressBar
+                            android:id="@+id/circleProgress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="24dp"
+                            app:mcProgress="66" />
+
+                        <ProgressBar
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="24dp" />
+
+                        <com.flymex.widget.FlymeCircularProgressButton
+                            android:id="@+id/cirButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="24dp"
+                            app:mcCirButtonTextIdle="安装" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.flymex.widget.FlymeCellGroup>
+
+            <!-- ===== 按钮 ===== -->
+            <com.flymex.widget.FlymeCellGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mzGroupTitle="按钮">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/fd_sys_margin_medium">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        <com.flymex.widget.FlymeButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="主要" />
+
+                        <com.flymex.widget.FlymeButton
+                            style="@style/Widget.Flymex.Button.Tonal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:text="次要" />
+
+                        <com.flymex.widget.FlymeButton
+                            style="@style/Widget.Flymex.Button.Outlined"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:text="描边" />
+
+                        <com.flymex.widget.FlymeButton
+                            style="@style/Widget.Flymex.Button.Text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:text="文字" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center_vertical">
+
+                        <com.flymex.widget.FlymeButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:enabled="false"
+                            android:text="禁用" />
+
+                        <com.flymex.widget.FlymeButton
+                            style="@style/Widget.Flymex.Button.Light.Delete"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:text="删除" />
+
+                        <com.flymex.widget.FlymeCheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:checked="true"
+                            android:text="同意" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center">
+
+                        <com.flymex.widget.FlymeButton
+                            style="@style/Widget.Flymex.Button.Large"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="取消"
+                            app:backgroundTint="?attr/colorSurfaceContainerLow"
+                            android:textColor="?attr/colorOnSurface" />
+
+                        <com.flymex.widget.FlymeButton
+                            style="@style/Widget.Flymex.Button.Large"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_weight="1"
+                            android:text="确定" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.flymex.widget.FlymeCellGroup>
+
+            <!-- ===== 弹层 ===== -->
+            <com.flymex.widget.FlymeCellGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mzGroupTitle="弹层">
+
+                <com.flymex.widget.FlymeCell
+                    android:id="@+id/cellDialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:summary="FlymeDialog：标题 / 内容 / 双按钮"
+                    android:title="对话框"
+                    app:mzWidget="arrow" />
+
+                <com.flymex.widget.FlymeCell
+                    android:id="@+id/cellDialogList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:summary="单选列表 + 勾选指示"
+                    android:title="列表对话框"
+                    app:mzWidget="arrow" />
+
+                <com.flymex.widget.FlymeCell
+                    android:id="@+id/cellSheet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:summary="FlymeActionSheet：底部滑入"
+                    android:title="底部操作面板"
+                    app:mzWidget="arrow" />
+
+                <com.flymex.widget.FlymeCell
+                    android:id="@+id/cellToast"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:title="Toast"
+                    app:mzWidget="arrow" />
+
+                <com.flymex.widget.FlymeCell
+                    android:id="@+id/cellCompleteToast"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:title="完成提示（带勾）"
+                    app:mzWidget="arrow" />
+
+                <com.flymex.widget.FlymeCell
+                    android:id="@+id/cellPopup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:title="弹出菜单"
+                    app:mzWidget="arrow" />
+            </com.flymex.widget.FlymeCellGroup>
+
+            <!-- ===== 其他 ===== -->
+            <com.flymex.widget.FlymeCellGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mzGroupTitle="其他">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/fd_sys_margin_medium">
+
+                    <com.flymex.widget.FlymeTabBar
+                        android:id="@+id/capsuleTabs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:mzTabEntries="@array/sample_capsule_tabs"
+                        app:mzTabStyle="capsule" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center_vertical">
+
+                        <com.flymex.widget.FlymePageIndicator
+                            android:id="@+id/pageIndicator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:mcCount="5"
+                            app:mcCurrent="1" />
+
+                        <com.flymex.widget.FlymeBadge
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="24dp"
+                            app:mcBadgeDot="true" />
+
+                        <com.flymex.widget.FlymeBadge
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            app:mcBadgeCount="8" />
+
+                        <com.flymex.widget.FlymeBadge
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            app:mcBadgeCount="128" />
+                    </LinearLayout>
+
+                    <com.flymex.widget.FlymeEmptyView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        app:mcEmptyImage="@drawable/mz_ic_empty_view_no_network"
+                        app:mcEmptySummary="检查网络连接后重试"
+                        app:mcEmptyTitle="无法连接到网络" />
+                </LinearLayout>
+            </com.flymex.widget.FlymeCellGroup>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

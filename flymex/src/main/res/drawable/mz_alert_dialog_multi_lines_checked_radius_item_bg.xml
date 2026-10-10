@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:state_pressed="true">
+        <inset android:insetLeft="0.0dip" android:insetRight="0.0dip">
+            <shape android:shape="rectangle">
+                <solid android:color="@color/fd_sys_color_state_pressed_default" />
+                <corners android:radius="6.0dip" />
+            </shape>
+        </inset>
+    </item>
+    <item android:drawable="@android:color/transparent" />
+</selector>

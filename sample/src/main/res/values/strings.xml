@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Flymex</string>
+    <string-array name="sample_tabs">
+        <item>组件</item>
+        <item>令牌</item>
+        <item>关于</item>
+    </string-array>
+    <string-array name="sample_capsule_tabs">
+        <item>全部</item>
+        <item>已安装</item>
+        <item>更新</item>
+    </string-array>
+</resources>

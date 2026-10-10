@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/fd_sys_radius_corner_smooth_regular" />
+    <solid android:color="@color/mz_button_disable_color" />
+</shape>

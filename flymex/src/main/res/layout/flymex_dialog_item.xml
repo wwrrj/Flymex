@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- mz_select_dialog_item / mz_select_dialog_singlechoice: 48dp rows, 21dp side padding, medium text, check mark at the end -->
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/mz_alert_dialog_listview_item_bg_radius"
+    android:checkMark="@drawable/mz_btn_check_single"
+    android:ellipsize="end"
+    android:fontFamily="sans-serif-medium"
+    android:gravity="start|center_vertical"
+    android:minHeight="@dimen/mz_popup_menu_item_height"
+    android:paddingStart="@dimen/mz_popup_list_item_content_padding_left"
+    android:paddingEnd="@dimen/mz_popup_list_item_singlechoice_padding_right"
+    android:textColor="?attr/colorOnSurface"
+    android:textSize="@dimen/mz_text_size_normal" />

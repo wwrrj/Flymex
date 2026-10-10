@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="flymex_light_system_bars">false</bool>
+    <bool name="flymex_is_night">true</bool>
+</resources>

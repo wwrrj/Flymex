@@ -1,0 +1,19 @@
+# Gradle / Android
+.gradle/
+build/
+local.properties
+*.iml
+.idea/
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+# extraction workspace (decompiled ROM resources) & bundled toolchain — not part of the library
+work/
+tools/apktool.jar
+tools/jdk17.zip
+tools/jdk17-extract/
+pnpm-lock.yaml
+.reference/
+work/*.png

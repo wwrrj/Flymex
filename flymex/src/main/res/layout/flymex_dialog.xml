@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Port of Flyme's layout/mz_alert_dialog_appcompat.xml (FlymeAlertDialogLayout) -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/flymex_parent_panel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="start|center_vertical|top"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/flymex_title_template"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start|center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/mz_alert_dialog_normal_margin_start"
+        android:paddingTop="@dimen/mz_alert_dialog_title_padding_top"
+        android:paddingEnd="@dimen/mz_alert_dialog_normal_margin_start">
+
+        <ImageView
+            android:id="@+id/flymex_icon"
+            android:layout_width="@dimen/mz_alert_dialog_title_icon_width"
+            android:layout_height="@dimen/mz_alert_dialog_title_icon_height"
+            android:layout_marginEnd="8dp"
+            android:scaleType="fitCenter"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/flymex_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="6dp"
+            android:maxLines="2"
+            android:textAppearance="@style/TextAppearance.Flymex.DialogTitle" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/flymex_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:overScrollMode="never">
+
+        <TextView
+            android:id="@+id/flymex_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="5dp"
+            android:paddingStart="@dimen/mz_alert_dialog_normal_margin_start"
+            android:paddingTop="@dimen/mz_alert_dialog_message_padding_top"
+            android:paddingEnd="@dimen/mz_alert_dialog_normal_margin_start"
+            android:paddingBottom="@dimen/mz_alert_dialog_message_padding_bottom"
+            android:textAppearance="@style/TextAppearance.Flymex.DialogMessage" />
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/flymex_custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/mz_dialog_custom_view_margin_horizontal"
+        android:paddingEnd="@dimen/mz_dialog_custom_view_margin_horizontal"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/flymex_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:overScrollMode="never"
+        android:paddingStart="@dimen/mz_input_listview_padding_start"
+        android:paddingEnd="@dimen/mz_input_listview_padding_end"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+    <!-- mz_alert_dialog_button_bar: 48dp rounded buttons (mz_alert_dialog_button_bg_radius, 8dp), 12dp gaps,
+         24dp side margins, 28dp above (mz_alert_dialog_button_margin_top) -->
+    <LinearLayout
+        android:id="@+id/flymex_button_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="locale"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/mz_alert_dialog_normal_margin_start"
+        android:paddingTop="@dimen/mz_alert_dialog_button_margin_top"
+        android:paddingEnd="@dimen/mz_alert_dialog_normal_margin_start"
+        android:paddingBottom="@dimen/mz_alert_dialog_normal_margin_start"
+        android:visibility="gone" />
+</LinearLayout>

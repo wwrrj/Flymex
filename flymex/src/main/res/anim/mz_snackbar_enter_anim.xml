@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:shareInterpolator="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <scale android:interpolator="@interpolator/mz_snackbar_scale_blowup_interpolator" android:duration="200" android:pivotX="50.0%p" android:pivotY="0.0%p" android:fromXScale="0.8" android:toXScale="1.0" android:fromYScale="0.8" android:toYScale="1.0" />
+    <alpha android:interpolator="@interpolator/mz_snackbar_alpha_interpolator" android:duration="150" android:fromAlpha="0.0" android:toAlpha="1.0" />
+</set>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/fd_sys_color_surface_container_low_default" />
+            <corners android:radius="@dimen/fd_sys_radius_corner_smooth_mini" />
+            <stroke android:width="1.0dip" android:color="@color/fd_sys_color_error_default" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/fd_sys_color_state_pressed_default" />
+            <corners android:radius="@dimen/fd_sys_radius_corner_smooth_mini" />
+            <stroke android:width="1.0dip" android:color="@color/mz_edit_error_frame_stroke" />
+        </shape>
+    </item>
+</selector>
