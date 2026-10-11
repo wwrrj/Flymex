@@ -39,17 +39,21 @@
 - 多选：`Widget.Flyme.Light.CompoundButton.CheckBox` → `drawable/mz_btn_check_multiple`
 - 单选：`listChoiceIndicatorSingle` → `drawable/mz_btn_check_single` → `mz_vec_btn_checked_*`（24dp，viewport 72，描边 6.9，`?colorPrimary` 着色；`animator/mc_anim_btn_checked_fade_in` 200ms 描画动画；禁用 alpha 0.25）
 
-## FlymeSeekBar — `AnimSeekBar` / `StepSeekBar`
+## FlymeSeekBar — `Widget.Flyme.Light.SeekBar` / `MzSeekBar`
 
-真机使用 `com.meizu.common.widget.MzSeekBar`（代码绘制，无 drawable），在"声音和振动"页实测：
+真机使用 `com.meizu.common.widget.MzSeekBar`，在"显示和亮度"页的亮度滑杆上逐像素核对（520dpi）。
+外观完全由三个 drawable 决定，FlymeSeekBar 用代码按同样的层次绘制：
 
 | 项 | 来源 | 值 |
 |---|---|---|
-| 轨道 | `mz_seekbar_height`，`?cornerMini` | 22dp 高，8dp 圆角，`?colorSurfaceContainerLow` |
-| 填充 | — | `?colorBrand`，同圆角，末端比滑块多出 4dp |
-| 滑块 | `mz_switch_thumb_to_width` | 14dp 白色圆，垂直居中（与开关滑块同一几何） |
-| 禁用 | `mz_seekbar_progress_disable`, `mz_seekbar_background_color_disable` | 填充 #c3dafa，轨道 #f9f9f9 |
-| 数值气泡 | `mcLargeCircleRadis` 13dp，`mcTextNumberSize` 14sp | 拖动时悬浮在滑块上方 2dp（`mcDistanceToCircle`） |
+| 轨道 | `mz_seekbar_background_enable` 第一层（作为 background 绘制，占满整个 View 宽度） | 22dp 高（`mz_seekbar_height`），圆角 `mz_seekbar_radius` 15dp > 半高 ⇒ 两端为完整半圆（药丸形）；颜色 `mz_seekbar_background_state_color` = `?colorSurfaceContainerLow` |
+| 左端帽 | 同一层叠列表第二层 | 12dp 宽（禁用 11dp）、左侧两角药丸圆角的 `?colorBrand` 色块，垫在填充下，保证填充起点永远是圆的 |
+| 填充 | `mz_seekbar_rectangle_progress` | 方角 `?colorBrand` 矩形，从滑块零位（11dp，`mz_seekbar_background_padding_start`）画到滑块圆心；方角被端帽和滑块盖住 |
+| 滑块 | `mz_seekbar_thumb` | 22dp `?colorBrand` 圆盘 + 14dp `?colorOnPrimary` 圆点；禁用时只画右半圆盘（避免半透明叠加） |
+| 禁用 | `mz_seekbar_thumb_state_color` | 品牌色部分降为 20% 透明度，轨道颜色不变 |
+| 内边距 | `Widget.Flyme.Light.SeekBar` | 左右 11dp、上下 4dp ⇒ 滑块圆心与触摸映射都在 11dp ～ 宽度−11dp 之间移动 |
+| 按压放大 | `MzSeekBar.mAnimHelper` → `SeekBarAnimHelper.handleTouchScale` | ACTION_DOWN 时整个 View 以 `SpringAnimation` 弹到 scaleX/scaleY **1.05**，UP/CANCEL 弹回 1.0；`SpringForce` stiffness **250**、dampingRatio **0.89**，默认中心为缩放锚点。`touchScaleEnabled` / `touchScale` 可关可调 |
+| 数值气泡 | `mcLargeCircleRadis` 13dp，`mcTextNumberSize` 14sp | 拖动时悬浮在轨道上方 2dp（`mcDistanceToCircle`） |
 | 分段 | `StepSeekBar`，`mc_enhance_seekbar_spot_radius` | 3dp 圆点标记每一档 |
 | 标签行 | `layout/flyme_seek_bar_preference.xml` | 13sp medium `?colorOnSurfaceVariant`，18dp 图标，距滑杆 10dp |
 
